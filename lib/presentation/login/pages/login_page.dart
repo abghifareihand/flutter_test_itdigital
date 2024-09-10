@@ -27,11 +27,12 @@ class _LoginPageState extends State<LoginPage> {
       body: Form(
         key: _formKey,
         child: ListView(
+          physics: const BouncingScrollPhysics(),
           padding: const EdgeInsets.all(20),
           children: [
             // Top image
             Image.asset(
-              height: 200,
+              height: 150,
               'assets/images/logo.png',
             ),
 
